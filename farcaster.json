@@ -1,8 +1,8 @@
 {
   "name": "Poster Creator",
   "description": "Create Quick And Simple Farcaster Posters.",
-  "iconUrl": "https://farcaster-poster-creator.vercel.app/assets/icon.png",
-  "imageUrl": "https://farcaster-poster-creator.vercel.app/assets/icon.png",
-  "homeUrl": "https://farcaster-poster-creator.vercel.app/",
+  "iconUrl": "hhttps://anomies.github.io/farcaster-poster-creator/assets/icon.png",
+  "imageUrl": "https://anomies.github.io/farcaster-poster-creator/assets/icon.png",
+  "homeUrl": "https://anomies.github.io/farcaster-poster-creator/",
   "version": "1.0.0"
 }
