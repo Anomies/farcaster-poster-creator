@@ -24,5 +24,28 @@
   </div>
 
   <script type="module" src="app.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+        const statusElement = document.getElementById('status');
+        
+        // 1. SDK Nesnesini Kontrol Et
+        if (window.miniApp) {
+            statusElement.innerHTML = "SDK Nesnesi BULUNDU! ✅";
+            
+            // 2. ready() Çağrısını Dene
+            try {
+                window.miniApp.ready(); 
+                statusElement.innerHTML += "<br>Ready() Başarılı! Uygulama Hazır.";
+                console.log("Ready() Başarılı!");
+            } catch (e) {
+                statusElement.innerHTML += `<br>Ready() Çağrısı Başarısız: ${e.message}`;
+                console.error("Ready() Çağrısı Hata:", e);
+            }
+        } else {
+            statusElement.innerHTML = "SDK Nesnesi BULUNAMADI! ❌ (Hata: farcaster-sdk.js yüklenemedi)";
+            console.error("window.miniApp nesnesi tanımlı değil. SDK dosyası hatalı veya yüklenemedi.");
+        }
+    });
+  </script>
 </body>
 </html>
