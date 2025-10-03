@@ -2,6 +2,7 @@
   "name": "Poster Creator",
   "description": "Create Quick And Simple Farcaster Posters.",
   "iconUrl": "https://farcaster-poster-creator.vercel.app/assets/icon.png",
+  "imageUrl": "https://farcaster-poster-creator.vercel.app/assets/icon.png",
   "homeUrl": "https://farcaster-poster-creator.vercel.app/",
   "version": "1.0.0"
 }
