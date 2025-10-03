@@ -25,15 +25,15 @@
 
   <script type="module" src="app.js"></script>
   <script>
-    window.addEventListener('load', () => {
+    // 'load' yerine 'DOMContentLoaded' kullanıyoruz. Bu olay çok daha erken tetiklenir.
+    document.addEventListener('DOMContentLoaded', () => { 
         const statusElement = document.getElementById('status');
         
-        // 1. SDK Nesnesini Kontrol Et
         if (window.miniApp) {
             statusElement.innerHTML = "SDK Nesnesi BULUNDU! ✅";
             
-            // 2. ready() Çağrısını Dene
             try {
+                // Bu çağrı artık sayfa yüklenir yüklenmez denenecek.
                 window.miniApp.ready(); 
                 statusElement.innerHTML += "<br>Ready() Başarılı! Uygulama Hazır.";
                 console.log("Ready() Başarılı!");
@@ -42,10 +42,10 @@
                 console.error("Ready() Çağrısı Hata:", e);
             }
         } else {
-            statusElement.innerHTML = "SDK Nesnesi BULUNAMADI! ❌ (Hata: farcaster-sdk.js yüklenemedi)";
-            console.error("window.miniApp nesnesi tanımlı değil. SDK dosyası hatalı veya yüklenemedi.");
+            statusElement.innerHTML = "SDK Nesnesi BULUNAMADI! ❌";
+            console.error("window.miniApp nesnesi tanımlı değil.");
         }
     });
-  </script>
+</script>
 </body>
 </html>
