@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Farcaster Poster Creator 🎨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Farcaster Poster Maker 🖼️</h1>
+
+  <div class="controls">
+    <input type="text" id="posterText" placeholder="Poster metninizi girin..." maxlength="60">
+    <div class="color-picker-container">
+        <label for="bgColor">Background Color:</label>
+        <input type="color" id="bgColor" value="#6c5ce7">
+    </div>
+    <button onclick="updateCanvas()">Update Image</button>
+  </div>
+
+  <canvas id="posterCanvas" width="600" height="400"></canvas>
+  
+  <div class="actions">
+    <button onclick="sharePoster()">Share on Farcaster 🚀</button>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

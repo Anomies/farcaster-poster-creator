@@ -1,0 +1,11 @@
+{
+  "name": "farcaster-poster-creator",
+  "version": "1.0.0",
+  "description": "A simple Farcaster Mini App for creating posters.",
+  "scripts": {
+    "build": "echo 'Building static project...'" 
+  },
+  "dependencies": {
+    "@farcaster/miniapp-sdk": "^0.1.10"
+  }
+}

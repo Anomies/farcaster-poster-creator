@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+#posterCanvas {
+  border: 2px solid #444;
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+.controls, .actions {
+  margin: 15px auto;
+  max-width: 600px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #6c5ce7;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #a29bfe;
+}
+
+.color-picker-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
